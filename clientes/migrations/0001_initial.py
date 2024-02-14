@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
                 ('nome', models.CharField(max_length=100)),
                 ('email', models.EmailField(max_length=30)),
                 ('cpf', models.CharField(max_length=11, unique=True)),
-                ('rg', models.CharField(max_length=9)),
+                ('rg', models.CharField(max_length=9, unique=True)),
                 ('celular', models.CharField(max_length=14)),
                 ('ativo', models.BooleanField()),
             ],
